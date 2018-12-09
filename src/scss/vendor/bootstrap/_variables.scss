@@ -1,0 +1,21 @@
+//== Grid Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1240px,
+  wd: 1580px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  wd: 1536px
+) !default;
+
+
+//== Variable bawaan modul harus selalu di-import di bawah
+@import "~bootstrap/scss/variables";
