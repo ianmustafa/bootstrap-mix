@@ -2,7 +2,7 @@ const { mix } = require('laravel-mix');
 
 //== Konfigurasi
 mix.options({
-  processCssUrls: true,
+  processCssUrls: false,
 });
 
 //== Sass
