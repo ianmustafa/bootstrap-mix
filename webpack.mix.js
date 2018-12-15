@@ -10,7 +10,7 @@ mix.sass('src/scss/style.scss', 'public/css');
 
 //== JavaScript, dengan vendor extraction
 mix.js('src/js/main.js', 'public/js')
-   .extract(['jquery', 'popper.js', 'bootstrap']);
+   .extract();
 
 //== SourceMaps, hanya di dev
 if (!mix.inProduction()) {
@@ -19,9 +19,7 @@ if (!mix.inProduction()) {
 
 //== BrowserSync
 mix.browserSync({
-  injectChanges: true,
   files: ['**/*.html', '**/*.js', '**/*.css'],
-  logSnippet: true,
   proxy: false,
   server: {
     baseDir: 'public',
